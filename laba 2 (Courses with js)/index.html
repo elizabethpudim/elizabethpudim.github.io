@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Elcourage education</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.toggle').click(function(){
+				$('ul').toggleClass('active');
+			})
+		})
+	</script>
+
+</head>
+<body onload='start()'>
+	<section>
+		<header class="menu">
+			<a class="toggle">Menu</a>
+			<ul class="">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#form">Registration</a></li>
+				<li><a href="#contact">Contact</a></li>
+
+			</ul>
+		</header>
+	</section>
+	<header class="showcase" id="home">
+		
+		<div class="content">
+			<img src="logo.png" class="logo" alt="logo">
+			<div class="title"> 
+				Welcome to Elcourage Courses!
+				
+			</div>
+			<div class="text">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, consequuntur.
+			</div>
+		</div>
+	</header>
+	<div id="services"></div>
+	<!-- Services section -->
+	<section class="services" >
+		<div class="container grid-3 center"> 
+			<div>
+				<i class="fab fa-youtube fa-3x"></i>
+				<h3>YouTube</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, dolorum?</p>
+			</div>
+			<div>
+				<i class="fas fa-chalkboard-teacher fa-3x"></i>
+				<h3>Live courses</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, dolorum?</p>
+			</div>
+			<div>
+				<i class="fas fa-briefcase fa-3x"></i>
+				<h3>For companies</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, dolorum?</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- About -->
+
+	<section class="about bg-light" id="about">
+		<div class="container">
+			<div class="grid-2">
+				<div class="center">
+					<i class="fas fa-user-graduate fa-9x"></i>
+				</div>
+				<div>
+					<h3>About Us</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias illo modi adipisci alias reiciendis quibusdam, iste commodi nulla deserunt quo quam nisi assumenda corporis quos perferendis sit perspiciatis eligendi repellat officia iusto odit earum sint ipsa. Pariatur, placeat voluptas accusantium.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Register -->
+	<section class="form bg-light" id="form">
+		<div class="wrap-form">
+		<h2>Sign Up Here</h2>
+		<form class='tooltip'>
+			<span id="tooltiptext">Any questions? Enter your data to sign up</span>
+			<input type="text" name="" placeholder="First Name" required onclick="hideTooltip()">
+			<input type="text" name="" placeholder="Last Name" required>
+			<input type="text" name="" placeholder="Email" required>
+			<input type="text" name="" placeholder="Username" required>
+			<input type="password" name="" placeholder="Password" required>
+			<input type="submit" name="" value="Submit">
+		</form>
+	</div>
+	</section>
+
+
+	<!-- Footer -->
+	<footer class="center bg-dark" id="contact">
+		<p>Elcourage Courses &copy; 2018</p>
+	</footer>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
